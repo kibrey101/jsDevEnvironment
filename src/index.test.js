@@ -14,7 +14,7 @@ describe('index.html', () => {
         jsdom.env(index, (err, window) => {
             if(err) console.log(err); //eslint-disable-line no-console
             const element = window.document.getElementsByTagName('h1')[0]; 
-            expect(element.innerHTML).to.equal("Hi kebari wedi haras");
+            expect(element.innerHTML).to.equal("Hi kib");
             done();
             window.close();
         })
